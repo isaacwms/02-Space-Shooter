@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://UI/Main_Menu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/potw1434a-2.jpg" type="Texture" id=2]
 
 [node name="Main_Menu" type="Control"]
 anchor_right = 1.0
@@ -10,12 +11,20 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 681, 587 )
+scale = Vector2( 1.15937, 1.01823 )
+texture = ExtResource( 2 )
+
 [node name="Label" type="Label" parent="."]
 margin_right = 1025.0
 margin_bottom = 400.0
-text = "Welcome to the Space Shooter!"
+text = "Welcome to Galaxy Shooter!"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Play" type="Button" parent="."]
 margin_left = 462.0
